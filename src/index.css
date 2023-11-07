@@ -1,13 +1,107 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Weather */
+.weather-container {
+  background-color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #fff;
+  border-radius: 20px;
+  padding: 30px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.degree {
+  color: #fff !important;
+  font-size: 1.5rem !important;
+}
+
+.search-box {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px rgba(244, 244, 244, 0.4 );
+}
+
+.search {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.5);
+  width: 100% !important;
+  padding: 5px 0;
+  font-size: 1.2rem;
+
+ 
+}
+
+.control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weather-content {
+  margin-top: 2.5rem;
+}
+
+.climax {
+  display: inline-block;
+  font-size: 1.3rem;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 2rem 0px;
+}
+
+.temperature {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+.feeds {
+  margin-top: 2.5rem;
+}
+
+.feed {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.icon {
+  font-size: 2.5rem;
+  display: flex;
+  align-items: flex-start;
+  margin-right: 0.7rem;
+}
+
+.heading {
+  font-weight: 400;
+
+}
+
+.search::placeholder {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.search-btn {
+  font-weight: 700;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+.weather-image {
+  max-width: 120px;
+  margin: 0 auto
+}
+
+@media (max-width: 540px) {
+  .control {
+    flex-direction: column;
+  }
+
+  .degrees {
+    margin-top: 1rem;
+  }
 }
