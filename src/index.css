@@ -1,11 +1,12 @@
 /* Weather */
 .weather-container {
-  background-color: #333;
+  background-color: rgba(51, 51, 51, 0.7);
   max-width: 800px;
   margin: 0 auto;
   color: #fff;
   border-radius: 20px;
-  padding: 30px;
+  padding: 20px;
+  padding-bottom: 0px;
 }
 
 .degree {
@@ -28,9 +29,7 @@
   color: rgba(255, 255, 255, 0.5);
   width: 100% !important;
   padding: 5px 0;
-  font-size: 1.2rem;
-
- 
+  font-size: 14px;
 }
 
 .control {
@@ -40,33 +39,33 @@
 }
 
 .weather-content {
-  margin-top: 2.5rem;
+  margin-top: 1rem;
 }
 
 .climax {
   display: inline-block;
-  font-size: 1.3rem;
-  padding: 10px 20px;
+  font-size: 1rem;
+  padding: 5px 10px;
   border-radius: 10px;
-  margin: 2rem 0px;
+  margin: 0.6rem 0px;
 }
 
 .temperature {
-  font-size: 4rem;
-  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  margin-bottom: 0.1rem;
 }
 
 .feeds {
-  margin-top: 2.5rem;
+  margin-top: 1.15rem;
 }
 
 .feed {
-  padding: 10px;
+  padding: 5px;
   border-radius: 10px;
 }
 
 .icon {
-  font-size: 2.5rem;
+  font-size: 1.5em;
   display: flex;
   align-items: flex-start;
   margin-right: 0.7rem;
@@ -94,6 +93,10 @@
 .weather-image {
   max-width: 120px;
   margin: 0 auto
+}
+
+.btn-dark, .dark-bg {
+  background-color: rgba(52, 58, 64, 0.7) !important;
 }
 
 @media (max-width: 540px) {

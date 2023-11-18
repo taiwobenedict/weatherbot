@@ -38,7 +38,7 @@ function Weather() {
                 <div className="control">
                     <form className='search-box'onSubmit={handleSearch} >
                         <input type="text" placeholder='Search for a city...' className="search" onChange={(e)=>setSearchInput(e.target.value)} value={searchInput}/>
-                        <button type="submit" className='mr-3  search-btn' > <BsSearch size={25} /></button>
+                        <button type="submit" className='mr-3  search-btn' > <BsSearch size={15} /></button>
                        
                     </form>
 
@@ -57,7 +57,7 @@ function Weather() {
                     <h1 className="heading">{name}</h1>
                     <p className="date">{formatDate(currentDate)}</p>
 
-                    <p className="climax bg-dark">{description}</p>
+                    <p className="climax dark-bg">{description}</p>
 
                     <div className="weather-image">
                         <img src={` https://openweathermap.org/img/wn/${icon}@2x.png`} alt="" className="w-100" />
@@ -81,26 +81,26 @@ function Weather() {
                 <div className="feeds">
                     <div className="row mb-3">
                         <div className="col-sm-6 mb-3">
-                            <div className="feed bg-dark">
+                            <div className="feed dark-bg">
                                 <div className="d-flex align-items-center">
                                     <div className="icon">
                                         <FaTemperatureThreeQuarters />
                                     </div>
                                     <div>
-                                        <h5 className='m-0'>Real Feel</h5>
+                                        <h6 className='m-0'>Real Feel</h6>
                                         <small>{feels_like} <sup>o</sup> C</small>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="col-sm-6">
-                            <div className="feed bg-dark">
+                            <div className="feed dark-bg">
                                 <div className="d-flex align-items-center">
                                     <div className="icon">
                                         <BsFillDropletFill />
                                     </div>
                                     <div>
-                                        <h5 className='m-0'>Humidity</h5>
+                                        <h6 className='m-0'>Humidity</h6>
                                         <small>{humidity}%</small>
                                     </div>
                                 </div>
@@ -109,27 +109,27 @@ function Weather() {
                     </div>
 
                     <div className="row mb-3">
-                        <div className="col-sm-6 ">
-                            <div className="feed bg-dark">
+                        <div className="col-sm-6 mb-3 ">
+                            <div className="feed dark-bg">
                                 <div className="d-flex align-items-center">
                                     <div className="icon">
                                         <MdOutlineWindPower />
                                     </div>
                                     <div>
-                                        <h5 className='m-0'>Wind</h5>
+                                        <h6 className='m-0'>Wind</h6>
                                         <small>{wind} mph</small>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-6">
-                            <div className="feed bg-dark">
+                        <div className="col-sm-6 mb-3">
+                            <div className="feed dark-bg">
                                 <div className="d-flex align-items-center">
                                     <div className="icon">
                                         <IoSpeedometerOutline />
                                     </div>
                                     <div>
-                                        <h5 className='m-0'>Pressure</h5>
+                                        <h6 className='m-0'>Pressure</h6>
                                         <small>{pressure} hpo</small>
                                     </div>
                                 </div>
