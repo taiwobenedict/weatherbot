@@ -9,8 +9,7 @@ import { FaUser } from 'react-icons/fa6';
 
 
 function Bot() {
-  const OPENAI_API_KEY = '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'
-  const openai = new OpenAI({ apiKey: OPENAI_API_KEY, dangerouslyAllowBrowser: true });
+  const openai = new OpenAI({ apiKey: process.env.REACT_APP_OPENAI_API_KEY, dangerouslyAllowBrowser: true });
   
   
   const { name, setUI } = useContext(weatherContext)
